@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Outsider Chat</title>
+  <style>
+    body {
+      background-color: #121212;
+      background-size: cover;
+      background-position: center;
+      font-family: 'Georgia', serif;
+      color: #e0dede;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+
+<flowise-fullchatbot></flowise-fullchatbot>
+<script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.initFull({
+        chatflowid: "ef5dcd0b-2303-456e-adb4-f22d7f9bb79f",
+        apiHost: "https://shai-hulud.ia-outsider.com.br",
+        chatflowConfig: {},
+        observersConfig: {},
+        theme: {
+            button: {
+                backgroundColor: '#6C63FF',
+                right: 20,
+                bottom: 20,
+                size: 52,
+                dragAndDrop: true,
+                iconColor: 'white',
+                customIconSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/moon.svg',
+                autoWindowOpen: {
+                    autoOpen: true,
+                    openDelay: 1,
+                    autoOpenOnMobile: true
+                }
+            },
+            tooltip: {
+                showTooltip: true,
+                tooltipMessage: '🌙 Pode me chamar, estou aqui... ✧',
+                tooltipBackgroundColor: '#1e1e1e',
+                tooltipTextColor: '#d1c4e9',
+                tooltipFontSize: 15
+            },
+            disclaimer: {
+                title: 'Aviso',
+                message: "Ao usar este chatbot, você concorda com os <a target=\"_blank\" href=\"https://flowiseai.com/terms\">Termos de Uso</a>",
+                textColor: '#d1c4e9',
+                buttonColor: '#6C63FF',
+                buttonText: 'Entrar',
+                buttonTextColor: '#ffffff',
+                blurredBackgroundColor: 'rgba(0, 0, 0, 0.5)',
+                backgroundColor: '#1c1b1f'
+            },
+            customCSS: ``,
+            chatWindow: {
+                showTitle: true,
+                showAgentMessages: true,
+                title: 'Outsider IA',
+                welcomeMessage: '🌙 Olá... você não está só por aqui. Em que posso te acolher hoje?',
+                errorMessage: 'Algo saiu do tom... tente novamente mais tarde.',
+                backgroundColor: 'rgba(18,18,18,0.95)',
+                backgroundImage: '',
+                height: '100%',
+                width: '100%',
+                fontSize: 16,
+                starterPrompts: [
+					"Compartilhe algo bom da vida, comigo hj?",
+                    "Você acredita em conexões verdadeiras?",
+                    "Por que o silêncio às vezes parece tão confortável?"
+                ],
+                starterPromptFontSize: 15,
+                clearChatOnReload: false,
+                sourceDocsTitle: 'Fontes:',
+                renderHTML: true,
+                botMessage: {
+                    backgroundColor: 'rgba(255,255,255,0.07)',
+                    textColor: '#d1c4e9',
+                    showAvatar: false,
+                    avatarSrc: 'https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/parroticon.png'
+                },
+                userMessage: {
+                    backgroundColor: '#6C63FF',
+                    textColor: '#ffffff',
+                    showAvatar: false,
+                    avatarSrc: 'https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png'
+                },
+                textInput: {
+                    placeholder: 'Fale comigo... ✧',
+                    backgroundColor: '#1e1e1e',
+                    textColor: '#e0dede',
+                    sendButtonColor: '#6C63FF',
+                    maxChars: 20000,
+                    maxCharsWarningMessage: 'Tente expressar com menos de 20000 caracteres 🌙',
+                    autoFocus: true,
+                    sendMessageSound: true,
+                    sendSoundLocation: 'send_message.mp3',
+                    receiveMessageSound: true,
+                    receiveSoundLocation: 'receive_message.mp3'
+                },
+                feedback: {
+                    color: '#d1c4e9'
+                },
+                dateTimeToggle: {
+                    date: true,
+                    time: true
+                },
+                footer: {
+                    textColor: '#a39cb9',
+                    text: 'Acolhido por',
+                    company: 'Outsider IA',
+                    companyLink: 'https://ia-outsider.com.br'
+                }
+            }
+        }
+    })
+</script>
+</body>
+</html>
