@@ -6,11 +6,11 @@
   <title>Outsider Chat</title>
   <style>
     body {
-      background-color: #121212;
+      background-color: #f4f4f4; /* Soft white background */
       background-size: cover;
       background-position: center;
-      font-family: 'Georgia', serif;
-      color: #e0dede;
+      font-family: 'Calibri', serif;
+      color: #333333; /* Dark gray text for readability */
       margin: 0;
       padding: 0;
     }
@@ -28,7 +28,7 @@
         observersConfig: {},
         theme: {
             button: {
-                backgroundColor: '#6C63FF',
+                backgroundColor: '#4CAF50', /* Green button */
                 right: 20,
                 bottom: 20,
                 size: 52,
@@ -43,7 +43,7 @@
             },
             tooltip: {
                 showTooltip: true,
-                tooltipMessage: '🌙 Pode me chamar, estou aqui... ✧',
+                tooltipMessage: '.Net é vida ✧',
                 tooltipBackgroundColor: '#1e1e1e',
                 tooltipTextColor: '#d1c4e9',
                 tooltipFontSize: 15
@@ -51,29 +51,29 @@
             disclaimer: {
                 title: 'Aviso',
                 message: "Ao usar este chatbot, você concorda com os <a target=\"_blank\" href=\"https://flowiseai.com/terms\">Termos de Uso</a>",
-                textColor: '#d1c4e9',
-                buttonColor: '#6C63FF',
+                textColor: '#4CAF50', /* Green text */
+                buttonColor: '#4CAF50', /* Green button */
                 buttonText: 'Entrar',
                 buttonTextColor: '#ffffff',
                 blurredBackgroundColor: 'rgba(0, 0, 0, 0.5)',
-                backgroundColor: '#1c1b1f'
+                backgroundColor: '#e8f5e9' /* Soft green background */
             },
             customCSS: ``,
             chatWindow: {
                 showTitle: true,
                 showAgentMessages: true,
                 title: 'Outsider IA',
-                welcomeMessage: '🌙 Olá... você não está só por aqui. Em que posso te acolher hoje?',
+                welcomeMessage: 'Olá... conte comigo para ajudar vc a programar?',
                 errorMessage: 'Algo saiu do tom... tente novamente mais tarde.',
-                backgroundColor: 'rgba(18,18,18,0.95)',
+                backgroundColor: '#ffffff', /* White background for the chat window */
                 backgroundImage: '',
                 height: '100%',
                 width: '100%',
                 fontSize: 16,
                 starterPrompts: [
-					"Compartilhe algo bom da vida, comigo hj?",
-                    "Você acredita em conexões verdadeiras?",
-                    "Por que o silêncio às vezes parece tão confortável?"
+                    "C# é a melhor linguagem que existe, precisa de ajuda?",
+                    ".Net Core livrou o mundo do JAVA, e eu posso provar...",
+                    "Confie em si mesmo, vc será um grande Dev"
                 ],
                 starterPromptFontSize: 15,
                 clearChatOnReload: false,
@@ -81,23 +81,23 @@
                 renderHTML: true,
                 botMessage: {
                     backgroundColor: 'rgba(255,255,255,0.07)',
-                    textColor: '#d1c4e9',
+                    textColor: '#4CAF50', /* Green text */
                     showAvatar: false,
                     avatarSrc: 'https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/parroticon.png'
                 },
                 userMessage: {
-                    backgroundColor: '#6C63FF',
-                    textColor: '#ffffff',
+                    backgroundColor: '#4CAF50', /* Green background for user messages */
+                    textColor: '#ffffff', /* White text */
                     showAvatar: false,
                     avatarSrc: 'https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png'
                 },
                 textInput: {
                     placeholder: 'Fale comigo... ✧',
-                    backgroundColor: '#1e1e1e',
-                    textColor: '#e0dede',
-                    sendButtonColor: '#6C63FF',
+                    backgroundColor: '#ffffff', /* White input field */
+                    textColor: '#333333', /* Dark gray text */
+                    sendButtonColor: '#4CAF50', /* Green send button */
                     maxChars: 20000,
-                    maxCharsWarningMessage: 'Tente expressar com menos de 20000 caracteres 🌙',
+                    maxCharsWarningMessage: 'Questões com no máximo 20000 caracteres',
                     autoFocus: true,
                     sendMessageSound: true,
                     sendSoundLocation: 'send_message.mp3',
@@ -105,15 +105,15 @@
                     receiveSoundLocation: 'receive_message.mp3'
                 },
                 feedback: {
-                    color: '#d1c4e9'
+                    color: '#4CAF50' /* Green feedback */
                 },
                 dateTimeToggle: {
                     date: true,
                     time: true
                 },
                 footer: {
-                    textColor: '#a39cb9',
-                    text: 'Acolhido por',
+                    textColor: '#4CAF50', /* Green text */
+                    text: 'Conhecimento Compartilhado por',
                     company: 'Outsider IA',
                     companyLink: 'https://ia-outsider.com.br'
                 }
